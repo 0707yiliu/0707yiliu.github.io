@@ -62,11 +62,64 @@
 
       <div id="filters" class="button-group">
         <!-- <button class="button" data-filter="*">Show All</button> -->
-        <!-- <button class="button is-checked" data-filter=".highlight">Highlights</button> -->
+        <button class="button is-checked" data-filter=".highlight">Highlights</button>
         <button class="button" data-filter=".publication">Research</button>
         <!-- <button class="button" data-filter=".talk">Talks</button> -->
         <button class="button" data-filter=".misc">Misc</button>
       </div>
+
+      <div class="grid">
+
+        <!-- Highlights -->
+        <div class="list-item highlight description" data-category="highlight">
+          Recent highlights research:
+        </div>
+
+        <!-- Preview Videos -->
+        <div class="list-item highlight previews" data-category="highlight">
+
+          <a>
+            <video class="preview2" playsinline="" muted="" autoplay="" loop="">
+              <source src="images/pih_vftm.mp4" type="video/mp4">
+            </video>
+          </a>
+
+          <a href="https://ieeexplore.ieee.org/document/9744489">
+            <video class="preview1" playsinline="" muted="" autoplay="" loop="">
+              <source src="images/icubtele.mp4" type="video/mp4">
+            </video>
+          </a>
+
+          <a href="https://ieeexplore.ieee.org/document/9811740">
+            <video class="preview2" playsinline="" muted="" autoplay="" loop="">
+              <source src="images/art2.mp4" type="video/mp4">
+            </video>
+          </a>
+          
+
+        </div>
+        <!-- Truncated Set of Highlights (Shown by Default) -->
+        <div id="main-highlights">
+
+          <!-- <div class="list-item highlight" data-category="highlight">
+            <b>Demo</b> test <a href="https://airo.ugent.be/open-source/">"AiRO-imec open-source web"</a>
+          </div> -->
+
+        </div>
+
+        <!-- All Archived Highlights (Click to Show) -->
+        <div id="more-highlights" style="display: None">
+
+          <!-- <div class="list-item highlight" data-category="highlight">
+            <p class="date">2023</p>Conference on ICRA workshop <a href="https://ieeexplore.ieee.org/document/9811740">icra 2022</a>
+          </div> -->
+
+        </div>
+
+        <!-- Toggle highlights button. -->
+        <div class="list-item highlight toggle-button" data-category="highlight">
+          <a id="toggle_highlights_button" href="javascript:toggle_highlights()">Show more</a>
+        </div>  
 
         <!-- Publications -->
          <div class="list-item publication" data-category="publication">

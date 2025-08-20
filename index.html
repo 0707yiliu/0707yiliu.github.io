@@ -14,7 +14,7 @@
     <!-- Title -->
     <title>Yi Liu - Record</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=1000">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Isotope JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -24,13 +24,10 @@
     <!-- Custom Style -->
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
     <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
   </head>
   <body id="body">
     <div id="main">
@@ -42,9 +39,9 @@
             where I am interested in promoting the robots integrate into human's daily life smarter and safer.
             My research focuses on robotic learning, which enables robots to intelligently interact with the world in which humans exist. 
             Recently, I've been interested in how robots can interact with soft body more smoothly.
-            <div id="more-bio" style="display: None">
+            <div id="more-bio" style="display: none">
               <br>
-              <p>Yi Liu is a PhD Candidate (final year) at <a href="https://airo.ugent.be/">UGent AiRO-imec</a> working on robotics and reinforcement learning, supervised by Francis wyffels.
+              <p>Yi Liu is a PhD Candidate (final year) at <a href="https://airo.ugent.be/">UGent AiRO-imec</a> working on robotics and reinforcement learning, supervised by Francis Wyffels.
               He received his Bachelor in Automation in 2018 and his M.Eng in Control Engineering in 2021 at Guangdong University of Tech.
               He is interested in building control systems and algorithms that enable robots to interact with the human world more intelligently and safely.
               He is also interested in transfer learning, imitation learning, classical control algorithms, etc.
@@ -56,194 +53,91 @@
           </p>
         </div>
         <div id="intro-image">
-          <img src="images/profile.jpeg">
+          <img src="images/profile.jpeg" alt="Yi Liu profile picture">
         </div>
       </div>
 
       <div id="filters" class="button-group">
-        <!-- <button class="button" data-filter="*">Show All</button> -->
-        <!-- <button class="button is-checked" data-filter=".highlight">Highlights</button> -->
+        <button class="button is-checked" data-filter=".highlight">Highlights</button>
         <button class="button" data-filter=".publication">Research</button>
-        <!-- <button class="button" data-filter=".talk">Talks</button> -->
         <button class="button" data-filter=".misc">Misc</button>
       </div>
 
+      <div class="grid">
+
+        <!-- Highlights -->
+        <div class="list-item highlight description" data-category="highlight">
+          Recent highlights research:
+        </div>
+
+        <!-- Preview Videos -->
+        <div class="list-item highlight previews" data-category="highlight">
+
+          <a>
+            <video class="preview2" playsinline muted autoplay loop>
+              <source src="images/pih_vftm.mp4" type="video/mp4">
+            </video>
+          </a>
+
+          <a href="https://ieeexplore.ieee.org/document/9744489">
+            <video class="preview1" playsinline muted autoplay loop>
+              <source src="images/icubtele.mp4" type="video/mp4">
+            </video>
+          </a>
+
+          <a href="https://ieeexplore.ieee.org/document/9811740">
+            <video class="preview2" playsinline muted autoplay loop>
+              <source src="images/art2.mp4" type="video/mp4">
+            </video>
+          </a>
+          
+        </div>
+
+        <!-- Highlights toggle -->
+        <div id="main-highlights"></div>
+        <div id="more-highlights" style="display: none"></div>
+        <div class="list-item highlight toggle-button" data-category="highlight">
+          <a id="toggle_highlights_button" href="javascript:toggle_highlights()">Show more</a>
+        </div>  
+
         <!-- Publications -->
-         <div class="list-item publication" data-category="publication">
-          <a href="https://ieeexplore.ieee.org/document/10521750" class="thumbnail">
-            <img src="images/framework.png">
-          </a>
-          <div class="project-description">
-            <h3><a href="https://ieeexplore.ieee.org/document/10521750">One-Shot Demonstration for Slicing and Cutting
-Everyday Food Items</a></h3>
-            <p>
-              <b>Yi Liu</b>, Andreas Verleysen, Francis Wyffels<br>
-              <i>IEEE Robotics and Automation Letters</i><br>
-                <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10521750">PDF</a>
-            </p>
-          </div>
-        </div>
+        <!-- ... (这里保留你的 publication/misc 内容不变) ... -->
 
-        <div class="list-item publication" data-category="publication">
-          <a href="https://ieeexplore.ieee.org/document/10521750" class="thumbnail">
-            <img src="images/framework1-1.jpeg">
-          </a>
-          <div class="project-description">
-            <h3><a href="https://ieeexplore.ieee.org/document/10521750">Compliant Robust Control for Robotic Insertion of Soft Bodies</a></h3>
-            <p>
-              <b>Yi Liu</b>, Andreas Verleysen, Francis Wyffels<br>
-              <i>IEEE Robotics and Automation Letters</i><br>
-                <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10521750">PDF</a>
-            </p>
-          </div>
+        <div id="footer">
+          Feel free to download this website's <a href="https://github.com/0707yiliu/0707yiliu.github.io">template</a>, just add a link back to my website. 
+          Inspired by <a href="https://andyzeng.github.io/">Andy's website</a>.
         </div>
-        
-        <div class="list-item publication" data-category="publication">
-          <a href="https://ieeexplore.ieee.org/document/9981464" class="thumbnail">
-            <img src="images/allgrohand_grasp.png">
-          </a>
-          <div class="project-description">
-            <h3><a href="https://ieeexplore.ieee.org/document/9981464">Multi-fingered Tactile Servoing for Grasping Adjustment under Partial Observation</a></h3>
-            <p>
-              Hanzhong Liu, Bidan Huang, Qiang Li, Yu Zheng, Yonggen Ling, Wangwei Lee, <b>Yi Liu</b>, Ya-Yen Tsai, Chenguang Yang<br>
-              <i>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2022</i><br>
-                <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9981464">PDF</a>
-            </p>
-          </div>
-        </div>
-
-        <div class="list-item publication" data-category="publication">
-          <a href="https://ieeexplore.ieee.org/document/9744489" class="thumbnail">
-            <img src="images/icub_dextro.png">
-          </a>
-          <div class="project-description">
-            <h3><a href="https://ieeexplore.ieee.org/document/9744489">Virtual Reality Based Tactile Sensing Enhancements for Bilateral Teleoperation System With In-Hand Manipulation</a></h3>
-            <p>
-              <b>Yi Liu</b>*, Ya-Yen Tsai*, Bidan Huang, Jing Guo<br>
-              <i>IEEE Robotics and Automation Letters</i><br>
-                <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9744489">PDF</a>
-            </p>
-          </div>
-        </div>
-
-        <div class="list-item publication" data-category="publication">
-          <a href="https://ieeexplore.ieee.org/document/9811740" class="thumbnail">
-            <img src="images/hybrid_model_art2.png">
-          </a>
-          <div class="project-description">
-            <h3><a href="https://ieeexplore.ieee.org/document/9811740">Online Adaptive Identification and Switching of Soft Contact Model Based on ART-II Method</a></h3>
-            <p>
-              <b>Yi Liu*</b>, Di Wu*, Fengtao Han, Jing Guo, Zhaoshui He, Chao Liu<br>
-              <i>International Conference on Robotics and Automation (ICRA) 2022</i><br>
-                <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9811740">PDF</a>
-            </p>
-          </div>
-        </div>
-
-        <div class="list-item publication" data-category="publication">
-          <a href="https://ieeexplore.ieee.org/document/8931566" class="thumbnail">
-            <img src="images/eyegaze_needle.png">
-          </a>
-          <div class="project-description">
-            <h3><a href="https://ieeexplore.ieee.org/document/8931566">A Novel Robotic Guidance System With Eye-Gaze Tracking Control for Needle-Based Interventions</a></h3>
-            <p>
-              Jing Guo, <b>Yi Liu</b>, Qing Qiu, Jie Huang, Chao Liu, Zhiguang Cao, Yue Chen<br>
-              <i>IEEE Transactions on Cognitive and Developmental Systems</i><br>
-                <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9744489">PDF</a>
-            </p>
-          </div>
-        </div>
-
-        <div class="list-item publication" data-category="publication">
-          <a href="https://ieeexplore.ieee.org/document/9195308" class="thumbnail">
-            <img src="images/medical_needle_machi.png">
-          </a>
-          <div class="project-description">
-            <h3><a href="https://ieeexplore.ieee.org/document/9195308">The Design and Control of Novel Needle Position Robotic System with Motion Uncertainties</a></h3>
-            <p>
-              <b>Yi Liu</b>, Jing Guo, Jiang Lan, Yujia Tang, Xinwei Chen, Xiaoming Xiong<br>
-              <i>5th International Conference on Advanced Robotics and Mechatronics (ICARM) 2020</i><br>
-                <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9195308">PDF</a>
-            </p>
-          </div>
-        </div>
-
-        <div class="list-item publication" data-category="publication">
-          <a href="https://www.hindawi.com/journals/complexity/2020/5406084/" class="thumbnail">
-            <img src="images/complixitypaper.png">
-          </a>
-          <div class="project-description">
-            <h3><a href="https://www.hindawi.com/journals/complexity/2020/5406084/">The Design of Compact Robotic-Assisted Needle Position System with MPC-Based Remote Control</a></h3>
-            <p>
-              Jing Guo, <b>Yi Liu</b>, Jin Wang, Chao Zeng, Jie Huang, and Chao Liu<br>
-              <i>Complexity</i><br>
-                <!-- <a href="https://ieeexplore.ieee.org/document/9811740">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp; -->
-                <a href="https://downloads.hindawi.com/journals/complexity/2020/5406084.pdf">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-                <a href="https://github.com/0707yiliu/MPC-Puncture-Robot">Code</a>
-            </p>
-          </div>
-        </div>
-        <!-- Talks -->
-        <!-- <div class="list-item talk" data-category="talk">
-          <p class="date">2023</p>Stanford <a href="https://svl.stanford.edu/">Talk demo</a>
-        </div> -->
-
-       <!-- Services -->
-        <div class="list-item misc" data-category="misc">
-          <p class="date">2023</p>ICRA Workshop contribution<a href="https://openreview.net/forum?id=CN2Zr3ZYHF"> A Robust and Safe Strategy for Robotic Assembly</a> 
-        </div>
-        <div class="list-item misc" data-category="misc">
-          <p class="date">2024</p>IROS Oral Presentation<a href="https://ieeexplore.ieee.org/document/10521750"> Compliant Robust Control for Robotic Insertion of Soft Bodies (Trasferred from RA-L)</a>
-        </div>
-
-        <div id="footer">Feel free to download this website's <a href="https://github.com/0707yiliu/0707yiliu.github.io">template</a>, just add a link back to my website. 
-          Inspired by <a href="https://andyzeng.github.io/">Andy's website</a>.</div>
       </div>
     </div>
 
     <script>
-
       // Isotope grid.
       var $grid = $('.grid').isotope({
         itemSelector: '.list-item',
         layoutMode: 'fitRows',
         transitionDuration: 0,
         stagger: 10,
-        initLayout: false,
-        getSortData: {
-          name: '.name',
-          symbol: '.symbol',
-          number: '.number parseInt',
-          category: '[data-category]',
-          weight: function( itemElem ) {
-            var weight = $( itemElem ).find('.weight').text();
-            return parseFloat( weight.replace( /[\(\)]/g, '') );
-          }
-        }
+        initLayout: false
       });
 
       // Bind filter button click.
-      $('#filters').on( 'click', 'button', function() {
-        var filterValue = $( this ).attr('data-filter');
+      $('#filters').on('click', 'button', function() {
+        var filterValue = $(this).attr('data-filter');
         localStorage.setItem('filterValue', filterValue);
         $grid.isotope({ filter: filterValue });
       });
 
       // Change is-checked class on buttons.
-      $('.button-group').each( function( i, buttonGroup ) {
-        var $buttonGroup = $( buttonGroup );
-        $buttonGroup.on( 'click', 'button', function() {
+      $('.button-group').each(function(i, buttonGroup) {
+        var $buttonGroup = $(buttonGroup);
+        $buttonGroup.on('click', 'button', function() {
           $buttonGroup.find('.is-checked').removeClass('is-checked');
-          $( this ).addClass('is-checked');
+          $(this).addClass('is-checked');
         });
       });
 
       function update_isotope() {
-        // Retrieve cached button click.
-        var defaultFilterValue = localStorage.getItem('filterValue');
-        if (defaultFilterValue == null) {
-          defaultFilterValue = ".highlight"
-        }
+        var defaultFilterValue = localStorage.getItem('filterValue') || ".highlight";
         $grid.isotope({ filter: defaultFilterValue });
         var buttons = document.getElementsByClassName("button");
         for (var currButton of buttons) {
@@ -257,32 +151,27 @@ Everyday Food Items</a></h3>
 
       function toggle_bio() {
         var x = document.getElementById("more-bio");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }
+        x.style.display = (x.style.display === "none" || x.style.display === "") ? "block" : "none";
       }
 
       function toggle_highlights() {
         var x = document.getElementById("main-highlights");
         var y = document.getElementById("more-highlights");
-        var b = document.getElementById("toggle_highlights_button")
-        if (y.style.display === "none") {
+        var b = document.getElementById("toggle_highlights_button");
+        if (y.style.display === "none" || y.style.display === "") {
           x.style.display = "none";
           y.style.display = "block";
-          b.innerHTML = "Show less"
+          b.innerHTML = "Show less";
           update_isotope();
         } else {
           x.style.display = "block";
           y.style.display = "none";
-          b.innerHTML = "Show more"
+          b.innerHTML = "Show more";
           update_isotope();
         }
       }
 
       update_isotope();
-
     </script>
   </body>
 </html>

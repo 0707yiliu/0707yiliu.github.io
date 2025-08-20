@@ -31,6 +31,7 @@
   </head>
   <body id="body">
     <div id="main">
+      <!-- Intro -->
       <div id="intro">
         <div id="intro-text">
           <h1>Yi Liu</h1>
@@ -57,52 +58,139 @@
         </div>
       </div>
 
+      <!-- Filters: only Research + Misc -->
       <div id="filters" class="button-group">
-        <button class="button is-checked" data-filter=".highlight">Highlights</button>
-        <button class="button" data-filter=".publication">Research</button>
+        <button class="button is-checked" data-filter=".publication">Research</button>
         <button class="button" data-filter=".misc">Misc</button>
       </div>
 
+      <!-- Grid -->
       <div class="grid">
 
-        <!-- Highlights -->
-        <div class="list-item highlight description" data-category="highlight">
-          Recent highlights research:
-        </div>
-
-        <!-- Preview Videos -->
-        <div class="list-item highlight previews" data-category="highlight">
-
-          <a>
-            <video class="preview2" playsinline muted autoplay loop>
-              <source src="images/pih_vftm.mp4" type="video/mp4">
-            </video>
-          </a>
-
-          <a href="https://ieeexplore.ieee.org/document/9744489">
-            <video class="preview1" playsinline muted autoplay loop>
-              <source src="images/icubtele.mp4" type="video/mp4">
-            </video>
-          </a>
-
-          <a href="https://ieeexplore.ieee.org/document/9811740">
-            <video class="preview2" playsinline muted autoplay loop>
-              <source src="images/art2.mp4" type="video/mp4">
-            </video>
-          </a>
-          
-        </div>
-
-        <!-- Highlights toggle -->
-        <div id="main-highlights"></div>
-        <div id="more-highlights" style="display: none"></div>
-        <div class="list-item highlight toggle-button" data-category="highlight">
-          <a id="toggle_highlights_button" href="javascript:toggle_highlights()">Show more</a>
-        </div>  
-
         <!-- Publications -->
-        <!-- ... (这里保留你的 publication/misc 内容不变) ... -->
+        <div class="list-item publication" data-category="publication">
+          <a href="https://ieeexplore.ieee.org/document/10521750" class="thumbnail">
+            <img src="images/framework.png" alt="framework">
+          </a>
+          <div class="project-description">
+            <h3><a href="https://ieeexplore.ieee.org/document/10521750">One-Shot Demonstration for Slicing and Cutting Everyday Food Items</a></h3>
+            <p>
+              <b>Yi Liu</b>, Andreas Verleysen, Francis Wyffels<br>
+              <i>IEEE Robotics and Automation Letters</i><br>
+              <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10521750">PDF</a>
+            </p>
+          </div>
+        </div>
 
+        <div class="list-item publication" data-category="publication">
+          <a href="https://ieeexplore.ieee.org/document/10521750" class="thumbnail">
+            <img src="images/framework1-1.jpeg">
+          </a>
+          <div class="project-description">
+            <h3><a href="https://ieeexplore.ieee.org/document/10521750">Compliant Robust Control for Robotic Insertion of Soft Bodies</a></h3>
+            <p>
+              <b>Yi Liu</b>, Andreas Verleysen, Francis Wyffels<br>
+              <i>IEEE Robotics and Automation Letters</i><br>
+                <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10521750">PDF</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="list-item publication" data-category="publication">
+          <a href="https://ieeexplore.ieee.org/document/9981464" class="thumbnail">
+            <img src="images/allgrohand_grasp.png">
+          </a>
+          <div class="project-description">
+            <h3><a href="https://ieeexplore.ieee.org/document/9981464">Multi-fingered Tactile Servoing for Grasping Adjustment under Partial Observation</a></h3>
+            <p>
+              Hanzhong Liu, Bidan Huang, Qiang Li, Yu Zheng, Yonggen Ling, Wangwei Lee, <b>Yi Liu</b>, Ya-Yen Tsai, Chenguang Yang<br>
+              <i>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2022</i><br>
+                <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9981464">PDF</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="list-item publication" data-category="publication">
+          <a href="https://ieeexplore.ieee.org/document/9744489" class="thumbnail">
+            <img src="images/icub_dextro.png">
+          </a>
+          <div class="project-description">
+            <h3><a href="https://ieeexplore.ieee.org/document/9744489">Virtual Reality Based Tactile Sensing Enhancements for Bilateral Teleoperation System With In-Hand Manipulation</a></h3>
+            <p>
+              <b>Yi Liu</b>*, Ya-Yen Tsai*, Bidan Huang, Jing Guo<br>
+              <i>IEEE Robotics and Automation Letters</i><br>
+                <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9744489">PDF</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="list-item publication" data-category="publication">
+          <a href="https://ieeexplore.ieee.org/document/9811740" class="thumbnail">
+            <img src="images/hybrid_model_art2.png">
+          </a>
+          <div class="project-description">
+            <h3><a href="https://ieeexplore.ieee.org/document/9811740">Online Adaptive Identification and Switching of Soft Contact Model Based on ART-II Method</a></h3>
+            <p>
+              <b>Yi Liu*</b>, Di Wu*, Fengtao Han, Jing Guo, Zhaoshui He, Chao Liu<br>
+              <i>International Conference on Robotics and Automation (ICRA) 2022</i><br>
+                <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9811740">PDF</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="list-item publication" data-category="publication">
+          <a href="https://ieeexplore.ieee.org/document/8931566" class="thumbnail">
+            <img src="images/eyegaze_needle.png">
+          </a>
+          <div class="project-description">
+            <h3><a href="https://ieeexplore.ieee.org/document/8931566">A Novel Robotic Guidance System With Eye-Gaze Tracking Control for Needle-Based Interventions</a></h3>
+            <p>
+              Jing Guo, <b>Yi Liu</b>, Qing Qiu, Jie Huang, Chao Liu, Zhiguang Cao, Yue Chen<br>
+              <i>IEEE Transactions on Cognitive and Developmental Systems</i><br>
+                <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9744489">PDF</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="list-item publication" data-category="publication">
+          <a href="https://ieeexplore.ieee.org/document/9195308" class="thumbnail">
+            <img src="images/medical_needle_machi.png">
+          </a>
+          <div class="project-description">
+            <h3><a href="https://ieeexplore.ieee.org/document/9195308">The Design and Control of Novel Needle Position Robotic System with Motion Uncertainties</a></h3>
+            <p>
+              <b>Yi Liu</b>, Jing Guo, Jiang Lan, Yujia Tang, Xinwei Chen, Xiaoming Xiong<br>
+              <i>5th International Conference on Advanced Robotics and Mechatronics (ICARM) 2020</i><br>
+                <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9195308">PDF</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="list-item publication" data-category="publication">
+          <a href="https://www.hindawi.com/journals/complexity/2020/5406084/" class="thumbnail">
+            <img src="images/complixitypaper.png">
+          </a>
+          <div class="project-description">
+            <h3><a href="https://www.hindawi.com/journals/complexity/2020/5406084/">The Design of Compact Robotic-Assisted Needle Position System with MPC-Based Remote Control</a></h3>
+            <p>
+              Jing Guo, <b>Yi Liu</b>, Jin Wang, Chao Zeng, Jie Huang, and Chao Liu<br>
+              <i>Complexity</i><br>
+                <!-- <a href="https://ieeexplore.ieee.org/document/9811740">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp; -->
+                <a href="https://downloads.hindawi.com/journals/complexity/2020/5406084.pdf">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://github.com/0707yiliu/MPC-Puncture-Robot">Code</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Misc -->
+        <div class="list-item misc" data-category="misc">
+          <p class="date">2023</p>ICRA Workshop contribution <a href="https://openreview.net/forum?id=CN2Zr3ZYHF">A Robust and Safe Strategy for Robotic Assembly</a> 
+        </div>
+        <div class="list-item misc" data-category="misc">
+          <p class="date">2024</p>IROS Oral Presentation <a href="https://ieeexplore.ieee.org/document/10521750">Compliant Robust Control for Robotic Insertion of Soft Bodies (Transferred from RA-L)</a>
+        </div>
+
+        <!-- Footer -->
         <div id="footer">
           Feel free to download this website's <a href="https://github.com/0707yiliu/0707yiliu.github.io">template</a>, just add a link back to my website. 
           Inspired by <a href="https://andyzeng.github.io/">Andy's website</a>.
@@ -137,7 +225,7 @@
       });
 
       function update_isotope() {
-        var defaultFilterValue = localStorage.getItem('filterValue') || ".highlight";
+        var defaultFilterValue = localStorage.getItem('filterValue') || ".publication";
         $grid.isotope({ filter: defaultFilterValue });
         var buttons = document.getElementsByClassName("button");
         for (var currButton of buttons) {
@@ -152,23 +240,6 @@
       function toggle_bio() {
         var x = document.getElementById("more-bio");
         x.style.display = (x.style.display === "none" || x.style.display === "") ? "block" : "none";
-      }
-
-      function toggle_highlights() {
-        var x = document.getElementById("main-highlights");
-        var y = document.getElementById("more-highlights");
-        var b = document.getElementById("toggle_highlights_button");
-        if (y.style.display === "none" || y.style.display === "") {
-          x.style.display = "none";
-          y.style.display = "block";
-          b.innerHTML = "Show less";
-          update_isotope();
-        } else {
-          x.style.display = "block";
-          y.style.display = "none";
-          b.innerHTML = "Show more";
-          update_isotope();
-        }
       }
 
       update_isotope();
